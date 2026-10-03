@@ -1,0 +1,6 @@
+generated: '2026-10-03'
+method: probed
+generator: harvest-llms.py
+source: https://www.brandlive.com/llms.txt
+bytes: 5353
+note: saved verbatim; the provider's own document

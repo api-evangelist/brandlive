@@ -1,23 +1,93 @@
 aid: brandlive
+
 name: Brandlive
-description: 'Brandlive is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://framerusercontent.com/images/vds3mcWC5zZ6S26PmxAfPWDg8ow.png
+
+description: Brandlive provides a video streaming platform for businesses, enabling live town halls, video podcasts, on‑demand content, and interactive
+  virtual events. Their solutions include BrandTV®, a streaming service, and Brandlive Studios for high‑production video creation. Serving enterprises
+  such as Nike, Cognizant, Pfizer, and Shopify, Brandlive helps companies inject creativity into internal communications and external audiences,
+  turning ordinary meetings into engaging, broadcast‑quality experiences.
+
 url: https://raw.githubusercontent.com/api-evangelist/brandlive/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-03 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-03'
+
 modified: '2026-10-03'
+
 tags:
 - Company
-apis: []
+- Video
+- Streaming
+- Live Events
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/brandlive-vendors.yml
+- type: Spectral
+  url: rules/brandlive-rules.yml
+- type: Conformance
+  url: conformance/brandlive-conformance.yml
+- type: LLMsTxt
+  url: llms/brandlive-llms.txt
+- type: Hosts
+  url: hosts/brandlive-hosts.yml
+- type: Support
+  url: https://support.brandlive.com/hc/en-us
+- type: PrivacyPolicy
+  url: https://www.brandlive.com/legal/privacy
+- type: Documentation
+  url: https://api.brandlive.com/docs/
+- type: DomainSecurity
+  url: security/brandlive-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.brandlive.com/
+
+apis:
+- name: Brandlive API
+  description: Brandlive API provides endpoints for managing virtual event sessions, templates, and registrations.
+  humanURL: https://api.brandlive.com/docs/
+  baseURL: null
+  aid: brandlive:brandlive-api-2
+- aid: brandlive:brandlive-api
+  name: Brandlive API
+  description: 'Brandlive API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-10-03);
+
+    not the provider''s own document.'
+  humanURL: https://api.brandlive.com/docs
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/brandlive-openapi-generated.yml
+    x-provenance: generated
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: API documentation at https://api.brandlive.com/docs/ is a JavaScript‑rendered single‑page app with no machine‑readable OpenAPI spec
+    discovered.
+  evidence:
+  - url: https://api.brandlive.com/docs/
+    status: 200
+  checked: '2026-10-03'
+x-enrichment:
+  date: '2026-10-03'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
