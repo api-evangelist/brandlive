@@ -1,0 +1,25 @@
+{
+  "provider": "brandlive",
+  "sources": [
+    "_ae-authored/brandlive-openapi-generated.yml"
+  ],
+  "outputs": [
+    "brandlive-brandlive-api-api-openapi.yml",
+    "brandlive-event-api-openapi.yml",
+    "brandlive-registration-api-openapi.yml",
+    "brandlive-registration-code-check-api-openapi.yml",
+    "brandlive-template-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "brandlive-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "brandlive-openapi-generated.yml: tagged paths GET /v1/{v1id} -> Brandlive API",
+    "brandlive-openapi-generated.yml: tagged paths POST /v1/{v1id} -> Brandlive API",
+    "brandlive-openapi-generated.yml: declared missing tag: Brandlive API",
+    "apis.yml register: written (+5 apis, 6 total)"
+  ],
+  "skipped": []
+}

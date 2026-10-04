@@ -1,0 +1,39 @@
+openapi: 3.2.0
+info:
+  title: Brandlive Registration Code Check API
+  version: '2026-10-03'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-03: 7 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Brandlive has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 7
+    pages-with-code: 0
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-03'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://api.brandlive.com/docs
+tags:
+- name: Registration Code Check
+paths:
+  /v1/registration-code-check/{eventUuid}:
+    post:
+      operationId: post_v1_registration_code_check_eventUuid
+      tags:
+      - Registration Code Check
+      summary: Check a registration code for an event
+      x-source: https://api.brandlive.com/docs
+      parameters:
+      - name: eventUuid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation

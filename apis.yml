@@ -61,21 +61,57 @@ common:
 
 apis:
 - name: Brandlive API
-  description: Brandlive API provides endpoints for managing virtual event sessions, templates, and registrations.
+  description: >-
+    Brandlive API provides endpoints for managing virtual event sessions, templates, and registrations.
   humanURL: https://api.brandlive.com/docs/
   baseURL: null
   aid: brandlive:brandlive-api-2
-- aid: brandlive:brandlive-api
-  name: Brandlive API
-  description: 'Brandlive API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-10-03);
-
-    not the provider''s own document.'
-  humanURL: https://api.brandlive.com/docs
+- aid: brandlive:brandlive-brandlive-api-api
+  name: Brandlive Brandlive API
+  description: The Brandlive API API from Brandlive — 1 operation(s) for brandlive api.
+  humanURL: https://api.brandlive.com/docs/
+  tags:
+  - Brandlive API
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/brandlive-openapi-generated.yml
-    x-provenance: generated
-
+    url: openapi/brandlive-brandlive-api-api-openapi.yml
+- aid: brandlive:brandlive-event-api
+  name: Brandlive Event API
+  description: The Event API from Brandlive — 2 operation(s) for event.
+  humanURL: https://api.brandlive.com/docs/
+  tags:
+  - Event
+  properties:
+  - type: OpenAPI
+    url: openapi/brandlive-event-api-openapi.yml
+- aid: brandlive:brandlive-registration-api
+  name: Brandlive Registration API
+  description: The Registration API from Brandlive — 1 operation(s) for registration.
+  humanURL: https://api.brandlive.com/docs/
+  tags:
+  - Registration
+  properties:
+  - type: OpenAPI
+    url: openapi/brandlive-registration-api-openapi.yml
+- aid: brandlive:brandlive-registration-code-check-api
+  name: Brandlive Registration Code Check API
+  description: >-
+    The Registration Code Check API from Brandlive — 1 operation(s) for registration code check.
+  humanURL: https://api.brandlive.com/docs/
+  tags:
+  - Registration Code Check
+  properties:
+  - type: OpenAPI
+    url: openapi/brandlive-registration-code-check-api-openapi.yml
+- aid: brandlive:brandlive-template-api
+  name: Brandlive Template API
+  description: The Template API from Brandlive — 1 operation(s) for template.
+  humanURL: https://api.brandlive.com/docs/
+  tags:
+  - Template
+  properties:
+  - type: OpenAPI
+    url: openapi/brandlive-template-api-openapi.yml
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
